@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/cta-area.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2261b6a0b0.js" crossorigin="anonymous"></script>
+    <title>Koibird</title>
+  </head>
+  <body>
+    <!-- Back To Top Button -->
+    <button onclick="topBtn()" id="topBtn""><i class="fa-solid fa-angles-up"></i></button>
+
+    <!-- Responsive Navbar -->
+    <div class="res-nav">
+      <button id="hamburger-btn" onclick="openNav()">
+        <svg class="hamburger">
+          <line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger__bar hamburger__bar--top" />
+          <line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger__bar hamburger__bar--mid" />
+          <line x1="0" y1="50%" x2="100%" y2="50%" class="hamburger__bar hamburger__bar--bot" />
+        </svg>
+      </button>
+      <img src="./images/LOGO.png" alt="Logo">
+    </div>
+
+      <!-- Navbar -->
+      <div class="nb-navbar" id="nb-navbar">
+          <div class="nb-top">
+            <div class="nb-top-left">
+                <input type="text" class="nb-left-input">
+            </div>
+            <div class="nb-top-center">
+                <img src="./images/LOGO.png" alt="Logo">
+            </div>
+            <div class="nb-top-right">
+                <div class="nb-top-right-text">
+                  <div class="nb-top-right-text-register">
+                    Register
+                  </div>
+                  |
+                  <div class="nb-top-right-text-account">
+                    My Account
+                  </div>
+                </div>
+                <div class="nb-top-right-icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+          </div>
+          <div class="nb-bottom">
+            <ul class="nb-bottom-list">
+              <li>
+                SHOP BY CATEGORY
+              </li>
+              <li class="nb-bottom-list-dropdown" onmouseover="hover()" onmouseout="unHover()">
+                <a href="#" class="nb-bottom-list-dropdown-hover">
+                  SHOP BY BRAND
+                </a>
+                <ul class="nb-bottom-list-dropdown-block">
+                  <ul>
+                    <li><a href="#">ANAKIKI</a></li>
+                    <li><a href="#">ANNE WEST</a></li>
+                    <li><a href="#">BACON CLOTHING</a></li>
+                    <li><a href="#">BLACK CROWS</a></li>
+                    <li><a href="#">BLANCHA</a></li>
+                    <li><a href="#">CANCELLATO</a></li>
+                    <li><a href="#">CORDOVA</a></li>
+                    <li><a href="#">FUSALP</a></li>
+                    <li><a href="#">I LOVE MR MITTENS</a></li>
+                    <li><a href="#">IENKI IENKI</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">LE KILT</a></li>
+                    <li><a href="#">LINGUA FRANCA</a></li>
+                    <li><a href="#">MORPHO AND LUNA</a></li>
+                    <li><a href="#">NASTAHA ZINKO</a></li>
+                    <li><a href="#">PERFECT MOMENT</a></li>
+                    <li><a href="#">SPENCER VLADIMIR</a></li>
+                    <li><a href="#">STAND</a></li>
+                    <li><a href="#">WILD AND WOOLY</a></li>
+                    <li><a href="#">WOOLY BOOLY</a></li>
+                    <li><a href="#">BLACK CROWS</a></li>
+                  </ul>
+                </ul>
+              </li>
+              <li>
+                SHOP BY COLLECTION
+              </li>
+              <li>
+                ABOUT KOIBIRD
+              </li>
+              <li>
+                POP UP SHOP
+              </li>
+              <li class="block-items">
+                <ul>
+                  <li>Register</li>
+                  <li>My Accout</li>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                  <li><i class="fa-solid fa-bag-shopping"></i></li>
+                </ul>
+              </li>
+            </ul> 
+          </div>
+      </div>
+
+      <!-- Main Logo -->
+      <div class="bg-main">
+        <div class="bg-main-wrapper">
+          <div class="bg-main-wrapper-logo">
+            <img src="./images/BANNER LOGO.png">
+          </div>
+          <div class="bg-main-wrapper-text">
+            <span>BEAUTY AND THE PISTE</span>
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- What Are We Shopping -->
+      <div class="title-line">
+        <div class="title-line-text">
+          WHAT WE ARE SHOPPING NOW
+        </div>
+      </div>
+
+      <!-- Carousel New In -->
+      <div class="break-line">
+       <div class="break-line-wrapper">
+        <span>NEW IN</span>
+       </div>
+      </div>
+
+      <div class="carousel-container">
+        <button class="btn-prev"> <i class="fa-solid fa-angle-right"></i></button>
+        <button class="btn-next"> <i class="fa-solid fa-angle-right"></i></button>
+        <div class="card-container">
+          <div class="card">
+            <div class="image">
+              <img src="./images/jacket-black.png">
+            </div>
+            <div class="info">
+              <span class="icon">
+                <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+              </span>
+              <span class="title">
+                BLACK JACKET
+              </span>
+              <span class="prod-tag">
+                Gucci
+              </span>
+              <span class="prod-price">
+                £000
+              </span>
+              <span class="button">
+                <button id="btn-shop-now">SHOP NOW</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/jacket-white.png">
+            </div>
+            <div class="info">
+              <span class="icon">
+                <i class="fa-solid fa-heart fa-xl" id="heart"></i>
+              </span>
+              <span class="title">
+                WHITE JACKET
+              </span>
+              <span class="prod-tag">
+                Bacon Clothing
+              </span>
+              <span class="prod-price">
+                £000
+              </span>
+              <span class="button">
+                <button id="btn-shop-now">SHOP NOW</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/jacket-yellow.png">
+            </div>
+            <div class="info">
+              <span class="icon">
+                <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+              </span>
+              <span class="title">
+                YELLOW JACKET
+              </span>
+              <span class="prod-tag">
+                Annakiki
+              </span>
+              <span class="prod-price">
+                £000
+              </span>
+              <span class="button">
+                <button id="btn-shop-now">SHOP NOW</button>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/jacket-camoflauge.png">
+            </div>
+            <div class="info">
+              <span class="icon">
+                <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+              </span>
+              <span class="title">
+                CAMOUFLAGE JACKET
+              </span>
+              <span class="prod-tag">
+                Black Crows
+              </span>
+              <span class="prod-price">
+                £000
+              </span>
+              <span class="button">
+                <button id="btn-shop-now">SHOP NOW</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- CTA Area -->
+
+      <div class="cta-area">
+        <div class="cta-area-wrapper">
+          <div class="container item1">
+            <img src="./images/ctaOutwear.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>OUTERWEAR</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container item2">
+            <img src="./images/ctaSkis.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>SKIS</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container item3">
+            <img src="./images/ctaKnitwear.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>KNITWEAR</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container item4">
+            <img src="./images/ctaAccessories.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>ACCESSORIES</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container item5">
+            <img src="./images/ctaGoggles.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>GOGGLES</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container item6">
+            <img src="./images/ctaJackets.png">
+            <div class="overlay"></div>
+            <div class="text">
+              <div class="text-title"><span>JACKETS</span></div>
+              <div class="shop-btn">
+                <span class="shop-btn-text">
+                  SHOP NOW
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Best Sellers -->
+      <div class="break-line">
+        <div class="break-line-wrapper">
+         <span>BEST SELLERS</span>
+        </div>
+      </div>
+ 
+       <div class="carousel-container">
+         <button class="btn-prev"> <i class="fa-solid fa-angle-right"></i></button>
+         <button class="btn-next"> <i class="fa-solid fa-angle-right"></i></button>
+         <div class="card-container">
+           <div class="card">
+             <div class="image">
+               <img src="./images/img.png">
+             </div>
+             <div class="info">
+               <span class="icon">
+                 <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+               </span>
+               <span class="title">
+                 PINK JACKET
+               </span>
+               <span class="prod-tag">
+                 Gucci
+               </span>
+               <span class="prod-price">
+                 £000
+               </span>
+               <span class="button">
+                 <button id="btn-shop-now">SHOP NOW</button>
+               </span>
+             </div>
+           </div>
+           <div class="card">
+             <div class="image">
+               <img src="./images/1069334_in_pp.png">
+             </div>
+             <div class="info">
+               <span class="icon">
+                 <i class="fa-solid fa-heart fa-xl" id="heart"></i>
+               </span>
+               <span class="title">
+                 PINK KNIT BEANIE
+               </span>
+               <span class="prod-tag">
+                 Bacon Clothing
+               </span>
+               <span class="prod-price">
+                 £000
+               </span>
+               <span class="button">
+                 <button id="btn-shop-now">SHOP NOW</button>
+               </span>
+             </div>
+           </div>
+           <div class="card">
+             <div class="image">
+               <img src="./images/GUCCI-1-750x1125.png">
+             </div>
+             <div class="info">
+               <span class="icon">
+                 <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+               </span>
+               <span class="title">
+                 GOLD DLOVES
+               </span>
+               <span class="prod-tag">
+                 Annakiki
+               </span>
+               <span class="prod-price">
+                 £000
+               </span>
+               <span class="button">
+                 <button id="btn-shop-now">SHOP NOW</button>
+               </span>
+             </div>
+           </div>
+           <div class="card">
+             <div class="image">
+               <img src="./images/chloe-chlo-nile-bracelet-small-leather-and-suede-shoulder-bag-ivory-16264741.png">
+             </div>
+             <div class="info">
+               <span class="icon">
+                 <i class="fa-solid fa-heart  fa-xl" id="heart"></i>
+               </span>
+               <span class="title">
+                 CREAM HANDBAG
+               </span>
+               <span class="prod-tag">
+                 Black Crows
+               </span>
+               <span class="prod-price">
+                 £000
+               </span>
+               <span class="button">
+                 <button id="btn-shop-now">SHOP NOW</button>
+               </span>
+             </div>
+           </div>
+         </div>
+       </div>
+       </div>
+
+       <!-- Instagram Region -->
+
+       <div class="insta-region">
+         <div class="text">
+          <span>#KOISKI</span>
+         </div>
+         <ul>
+           <li><img src="./images/2bbbd169675b210d40480266ff686092.png"></li>
+           <li><img src="./images/2c34c5ee47b42df10dc57819a70785fc.png"></li>
+           <li><img src="./images/ctaGoggles.png"></li>
+           <li><img src="./images/ctaAccessories.png"></li>
+           <li><img src="./images/ctaKnitwear.png"></li>
+           <li><img src="./images/70s.png"></li>
+         </ul>
+         <ul>
+          <li><img src="./images/DZAlTmIUMAEWWY2.png"></li>
+          <li><img src="./images/La-doudoune-en-1967.png"></li>
+          <li><img src="./images/photo-hans-feurer-bogner-ski-clothing-1980-1.png"></li>
+          <li><img src="./images/VIm5V05x_o.png"></li>
+          <li><img src="./images/ctaOutwear.png"></li>
+          <li><img src="./images/ctaJackets.png"></li>
+        </ul>
+       </div>
+
+       <!-- Footer -->
+
+       <div class="footer">
+          <div class="footer-left">
+            <img src="./images/LOGO.png" alt="">
+            <div class="footer-left-list">
+              <ul class="list">
+                <li>
+                  ABOUT
+                </li>
+                <li>
+                  TERMS & CONDITIONS
+                </li>
+                <li>
+                  PRIVACY POLICY
+                </li>
+                <li>
+                  CONTACT US
+                </li>
+              </ul> 
+            </div>
+          </div>
+          <div class="footer-right">
+            <span>SIGN UP FOR OUR NEWSLETTER</span><br>
+            <input type="text" class="newsletter-text">
+            <div class="newsletter-check">
+              <input type="checkbox">
+              <label> GDPR tick box GDPR tick box GDPR tick box GDPR tick box GDPR tick box </label><br>
+            </div>
+            <button>SUBMIT ></button>
+          </div>
+       </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>

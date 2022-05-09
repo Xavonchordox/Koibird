@@ -1,0 +1,77 @@
+$primColor: #E0FF04;
+
+.bg-main{
+    background: url(../images/mainLogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    padding: 0;
+
+    @media screen and (max-width: 414px){
+        height: 80vh;
+    }
+
+    .bg-main-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+
+        .bg-main-wrapper-logo{
+            img{
+                width: 655px;
+
+                @media screen and (max-width: 1440px){
+                    width: 550px;
+                }
+
+                @media screen and (max-width: 1280px){
+                    width: 380px;
+                }
+
+                @media screen and (max-width: 414px){
+                    width: 300px;
+                }
+            } 
+        }
+        
+        .bg-main-wrapper-text{
+            text-align: right;
+            color: white;
+
+            span{
+                letter-spacing: 0.07em;
+                font-size: 14px;
+            }
+
+            i{
+                color: $primColor;
+            }
+        }
+
+    }
+}
+
+.title-line{
+    height: 112px;
+    width: 100%;
+    background: url(../images/Rectángulo29.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 22px;
+
+    @media screen and (max-width: 414px){
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 360px){
+        font-size: 15px;
+    }
+}

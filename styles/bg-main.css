@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.bg-main {
+  background: url(../images/mainLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  width: 100%;
+  padding: 0;
+}
+
+@media screen and (max-width: 414px) {
+  .bg-main {
+    height: 80vh;
+  }
+}
+
+.bg-main .bg-main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bg-main .bg-main-wrapper .bg-main-wrapper-logo img {
+  width: 655px;
+}
+
+@media screen and (max-width: 1440px) {
+  .bg-main .bg-main-wrapper .bg-main-wrapper-logo img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .bg-main .bg-main-wrapper .bg-main-wrapper-logo img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bg-main .bg-main-wrapper .bg-main-wrapper-logo img {
+    width: 300px;
+  }
+}
+
+.bg-main .bg-main-wrapper .bg-main-wrapper-text {
+  text-align: right;
+  color: white;
+}
+
+.bg-main .bg-main-wrapper .bg-main-wrapper-text span {
+  letter-spacing: 0.07em;
+  font-size: 14px;
+}
+
+.bg-main .bg-main-wrapper .bg-main-wrapper-text i {
+  color: #E0FF04;
+}
+
+.title-line {
+  height: 112px;
+  width: 100%;
+  background: url(../images/Rectángulo29.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 414px) {
+  .title-line {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title-line {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=bg-main.css.map */
